@@ -11,19 +11,21 @@
 </head>
 <body>
     <div class="container">
+        <div class="notifications">
+            <div class="invalidDNI">
+                <p id="resultText"><i class='bx bx-info-circle'></i>Invalid DNI</p>
+            </div>
+        
+            <div class="validDNI">
+                <p id="resultText"><i class='bx bx-info-circle'></i>Valid DNI</p>
+            </div>
+        </div>
+
         <div class="wrapper">
             <p id="dniText">DNI:</p>
             
             <div class="inputWrapper">
                 <input id="input" type="text" autocomplete="off" placeholder="(012-3456789-0)"><i class='bx bx-id-card'></i>
-            </div>
-
-            <div class="invalidDNI">
-                <p id="resultText"><i class='bx bx-info-circle'></i>INVALID DNI</p>
-            </div>
-
-            <div class="validDNI">
-                <p id="resultText"><i class='bx bx-info-circle'></i>VALID DNI</p>
             </div>
 
             <button id="btn">Verify</button>
