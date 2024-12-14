@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, #151515 50%, #5213ff 50%);
+}
+
+.container {
+    min-width: 350px;
+    width: 350px;
+    user-select: none;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: #212121;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 3px black;
+}
+
+p {
+    width: 85%;
+    text-align: left;
+    font-weight: 700;
+    color: rgba(225, 225, 225, .3);
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 85%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 45px 0px 10px;
+    font-size: 16px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, .3);
+    font-weight: 600;
+    transition: .3s;
+}
+
+input:focus::placeholder {
+    color: white;
+}
+
+i {
+    position: absolute;
+    right: 35px;
+    font-size: 30px;
+    pointer-events: none;
+    color: #212121;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: #5213ff;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    width: 85%;
+    height: 50px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #4411d1;
+}
