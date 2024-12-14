@@ -31,7 +31,7 @@ body {
     box-shadow: 0px 0px 8px 3px black;
 }
 
-p {
+#dniText {
     width: 85%;
     text-align: left;
     font-weight: 700;
@@ -72,12 +72,48 @@ input:focus::placeholder {
     color: white;
 }
 
-i {
+.bx-id-card {
     position: absolute;
     right: 35px;
     font-size: 30px;
     pointer-events: none;
     color: #212121;
+}
+
+.invalidDNI {
+    width: 85%;
+    margin: 0px 0px 10px 0px;
+}
+
+.validDNI {
+    width: 85%;
+    margin: 0px 0px 10px 0px;
+}
+
+.invalidDNI p {
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.validDNI p {
+    font-weight: 700;
+    color: rgb(0, 255, 34);
+    display: flex;
+    align-items: center;
+}
+
+.invalidDNI {
+    display: none;
+}
+
+.validDNI {
+    display: none;
+}
+
+.active.active {
+    display: flex;
 }
 
 button {
